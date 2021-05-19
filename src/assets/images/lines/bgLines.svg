@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.251;fill: #cfadac } 
+	</style>
+	<path id="Background" class="shp0" d="M405.5 1119.92L403 1119.92L403 -65L405.5 -65L405.5 1119.92Z" />
+	<path id="Background copy 2" class="shp0" d="M1307.5 1132.92L1305 1132.92L1305 -52L1307.5 -52L1307.5 1132.92Z" />
+	<path id="Background copy 3" class="shp0" d="M1003.5 1132.92L1001 1132.92L1001 -52L1003.5 -52L1003.5 1132.92Z" />
+	<path id="Background copy" class="shp0" d="M112.5 1132.92L110 1132.92L110 -52L112.5 -52L112.5 1132.92Z" />
+	<path id="Background copy 4" class="shp0" d="M698.5 1132.92L696 1132.92L696 -52L698.5 -52L698.5 1132.92Z" />
+</svg>
