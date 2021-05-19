@@ -1,0 +1,30 @@
+// common //
+.section-outer {
+
+}
+.section-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+// / common //
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .quote-title {
+        padding-top: 350px;
+        padding-bottom: 350px;
+        font-family: Playfair Display;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: 0em;
+        color: #23242C;
+        background-image: url('../../../assets/images/Ellipse\ 10.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

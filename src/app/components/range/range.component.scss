@@ -1,0 +1,72 @@
+// common //
+.section-outer {
+
+}
+.section-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+// / common //
+.section-brands {
+    text-align: center;
+    box-sizing: border-box;
+    .subtitle {
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0em;
+        color: #967675;
+
+    }
+    .title {
+        font-family: Playfair Display;
+        font-size: 102px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110px;
+    }
+    .brands-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 511px;
+            .content {
+                margin-top: -10px;
+                background: #F6ECE8;
+                    .content-title {
+                        font-family: Playfair Display;
+                        font-size: 48px;
+                        font-style: italic;
+                        font-weight: 400;
+                        color:  #967675;
+                        padding: 10px 0px 0 0;
+                    }
+                    .content-subtitle {
+                        color:  #967675;
+                        text-align: center;
+                        padding: 20px 100px 30px 100px;
+                    }
+            }
+        }
+        .item:nth-child(2), .item:nth-child(4) {
+            margin-top: 150px;
+        }
+
+        
+    }
+    .more {
+        padding: 50px;
+        font-size: 56px;
+        background-image: url('../../../assets/images/More.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+}

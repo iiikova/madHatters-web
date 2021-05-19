@@ -1,0 +1,39 @@
+// common //
+.section-outer {
+
+}
+.section-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+// / common //
+
+.list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    .list-item {
+        width: 250px;
+        .list-title {
+            font-family: Playfair Display;
+            font-size: 38px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 51px;
+            margin-bottom: 20px;
+        }
+        .list-text {
+            padding-left: 50px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            color: #9D8888;
+            ;
+        }
+    }
+}
