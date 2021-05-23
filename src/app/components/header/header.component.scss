@@ -1,20 +1,9 @@
-// common //
-.section-outer {
-width: 100%;
-box-sizing: border-box;
-
-}
-.section-inner {
+.section-header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-}
-// / common //
-
-// header //
-.section-header {
-    .section-inner {
-
+    padding-left: 10px;
+    padding-right: 10px;
         .section-header__menu {
             display: flex;
             flex-direction: column;
@@ -45,50 +34,47 @@ box-sizing: border-box;
         }
         .section-header-content {
             padding-top: 100px;
-            padding-bottom: 100px;
+            padding-bottom: 200px;
             border-top: 1px solid #CFADAC;
             box-sizing: border-box;
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-image: url('../../../assets/images/bgHeader.svg');
-            .wrap    {
-                display: flex;
-                justify-content: space-between;
                 .content {
-                     box-sizing: border-box;
-
-                }
-                .subtitle {
-                    font-family: Poppins;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: 24px;
-                    letter-spacing: 0em;
-                    text-align: left;
-                    color: #967675;
-                }
-                .title {
-                    margin-top: 20px;
-                    width: 50%;
-                    font-family: Playfair Display;
-                    font-size: 102px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 110px;
-                }
-                .button {
-                    margin-top: 20px;
-                    button {
-                        height: 61px;
-                        width: 185px;
-                        background: #FFFFFF;
-                        border: 1px solid #CFADAC;
-                        box-sizing: border-box;
-                        border-radius: 6px;
+                    width: 60%;
+                    .subtitle {
+                        margin-bottom: 30px;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: left;
                         color: #967675;
-                        box-shadow: 0px 10px 13px -7px #967675, 5px 5px 15px 5px rgba(150,118,117,0);
+                    }
+                    .title {
+                        margin-top: 20px;
+                        font-family: Playfair Display;
+                        font-size: 102px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 110px;
+                    }
+                    .button {
+                        margin-top: 20px;
+                        button {
+                            margin-top: 50px;
+                            height: 61px;
+                            width: 185px;
+                            background: #FFFFFF;
+                            border: 1px solid #CFADAC;
+                            box-sizing: border-box;
+                            border-radius: 6px;
+                            color: #967675;
+                            box-shadow: 0px 10px 13px -7px #967675, 5px 5px 15px 5px rgba(150,118,117,0);
+                        }
                     }
                 }
             }
@@ -97,15 +83,113 @@ box-sizing: border-box;
                 .img_1 {
                     position: absolute;
                     right: 0px;
-                    top: 120px;
+                    top: -120px;
+                        img {
+                            height: 400px;
+                        }
                 }
                 .img_2 {
                     position: absolute;
                     right: 100px;
-                    top: -80px;
+                    top: -260px;
+                        img {
+                            height: 400px;
+                        }
                 }
             }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 425px) { 
+    .section-header {
+        .section-header__menu {
+                &__title {
+                    font-size: 2rem;
+                }
+                &__navbar {
+                    display: none;
+            }
         }
+        .section-header-content {
+            padding-bottom: 100px;
+            background-repeat: no-repeat;
+                .content {
+                    width: 100%;
+                    .title {
+                        font-size: 70px;
+                    }
+                }
+            }
+            .header-images {
+                .img_1 {
+                    right: 0px;
+                    top: -80px;
+                    display: none;
+                        img {
+                            height: 200px;
+                        }
+                }
+                .img_2 {
+                    display: none;
+                    right: 200px;
+                    top: -280px;
+                        img {
+                    right: 200px;
+
+                            height: 200px;
+                        }
+                }
+            }
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media  (max-width: 768px) { 
+    .section-header {
+            .section-header__menu {
+                    &__title {
+                        font-size: 2.5rem;
+                    }
+                    &__navbar {
+                        display: none;
+                }
+            }
+            .section-header-content {
+                background-repeat: no-repeat;
+                    .content {
+                        .title {
+                            font-size: 70px;
+                        }
+                    }
+                }
+                .header-images {
+                    .img_1 {
+                        right: 0px;
+                        top: -80px;
+                            img {
+                                height: 300px;
+                            }
+                    }
+                    .img_2 {
+                        right: 100px;
+                        top: -280px;
+                            img {
+                                height: 300px;
+                            }
+                    }
+                }
     }
 }
-// / header //
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) { 
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1440px) { 
+ 
+}

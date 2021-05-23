@@ -1,7 +1,4 @@
 // common //
-.section-outer {
-
-}
 .section-inner {
     width: 100%;
     max-width: 1200px;
@@ -9,7 +6,8 @@
 }
 // / common //
 .section-brands {
-    margin-top: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
     box-sizing: border-box;
     .subtitle {
@@ -38,6 +36,11 @@
             flex-direction: column;
             justify-content: center;
             width: 511px;
+            .img {
+                img {
+                    width: 100%;
+                }
+            }
             .content {
                 margin-top: -10px;
                 background: #F6ECE8;
