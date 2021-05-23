@@ -1,6 +1,8 @@
 // common //
 .section-outer {
 width: 100%;
+box-sizing: border-box;
+
 }
 .section-inner {
     width: 100%;
@@ -12,7 +14,7 @@ width: 100%;
 // header //
 .section-header {
     .section-inner {
-        
+
         .section-header__menu {
             display: flex;
             flex-direction: column;
@@ -42,8 +44,9 @@ width: 100%;
             }
         }
         .section-header-content {
+            padding-top: 100px;
+            padding-bottom: 100px;
             border-top: 1px solid #CFADAC;
-            height: 80vh;
             box-sizing: border-box;
             display: flex;
             justify-content: space-between;
@@ -53,6 +56,8 @@ width: 100%;
                 display: flex;
                 justify-content: space-between;
                 .content {
+                     box-sizing: border-box;
+
                 }
                 .subtitle {
                     font-family: Poppins;
@@ -91,7 +96,7 @@ width: 100%;
                 position: relative;
                 .img_1 {
                     position: absolute;
-                    right: -8px;
+                    right: 0px;
                     top: 120px;
                 }
                 .img_2 {
