@@ -1,102 +1,97 @@
 // common //
 .section-inner {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 2%;
-    padding-right: 2%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
 }
 // / common //
-.section-image{
+.section-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .img-girl {
+    img {
+      width: 100%;
+    }
+  }
+  .image-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    .img-girl {
-        display: flex;
-        align-items: center;
-        img {
-            width: 100%;
-        }
-    }
-    .image-content {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
+    flex-direction: column;
+    margin-left: 20px;
 
-        .subtitle {
-            font-family: Poppins;
-            font-size: 16px;
-            color: #967675;
-        }
-        .title {
-            font-family: Playfair Display;
-            font-weight: 700;
-            line-height: 110px;
-            // font-size: 4em;
-        }
-        .button {
-            margin-top: 20px;
-          button {
-            height: 61px;
-            width: 185px;
-            background: #FFFFFF;
-            border: 1px solid #CFADAC;
-            box-sizing: border-box;
-            border-radius: 6px;
-            color: #967675;
-            box-shadow: 0px 10px 13px -7px #967675, 5px 5px 15px 5px rgba(150,118,117,0);
-          }
-        }
+    .subtitle {
+      font-family: Poppins;
+      font-size: 16px;
+      color: #967675;
     }
+    .title {
+      font-family: Playfair Display;
+      font-weight: 700;
+      line-height: 110px;
+    }
+    .button {
+      margin-top: 20px;
+      button {
+        height: 61px;
+        width: 185px;
+        background: #ffffff;
+        border: 1px solid #cfadac;
+        box-sizing: border-box;
+        border-radius: 6px;
+        color: #967675;
+        box-shadow: 0px 10px 13px -7px #967675,
+          5px 5px 15px 5px rgba(150, 118, 117, 0);
+      }
+    }
+  }
 }
-
 
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 425px) { 
-    .section-image{
-        flex-direction: column;
-        .image-content {
-            margin-top: 20px;
-            // margin-left: 0;
-        }
+@media (max-width: 425px) {
+  .section-image {
+    flex-direction: column;
+    .image-content {
+      margin: 0;
+      margin-top: 20px;
     }
-    
- }
+    .image-content {
+      .button {
+        button {
+          height: 61px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 
 // Medium devices (tablets, 768px and up)
-@media  (max-width: 768px) { 
-    .section-image{
-        .image-content {
-            .title {
-                line-height: 90px;
-                font-size: 3em;
-                width: 90%;
-            }
-            .button {
-              button {
-                height: 51px;
-                width: 125px;
-              }
-            }
-        }
+@media (max-width: 768px) {
+  .section-image {
+    .image-content {
+      .title {
+        line-height: 90px;
+        font-size: 3em;
+        width: 90%;
+      }
     }
- }
+  }
+}
 
 // X-Large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) { 
-    .title {
-        font-size: 4em;
-    }
- }
+@media (max-width: 1200px) {
+  .title {
+    font-size: 4em;
+  }
+}
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1440px) { 
-    .title {
-        font-size: 5em;
-    }
+@media (min-width: 1440px) {
+  .title {
+    font-size: 5em;
+  }
 }

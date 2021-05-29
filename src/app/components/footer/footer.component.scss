@@ -1,126 +1,227 @@
 // common //
 .section-outer {
-background-color: #23242C;
+  background-color: #23242c;
 }
 .section-inner {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 15px;
 }
 // / common //
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  height: 100%;
+  .footer-left {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    color: #fff;
-    height: 300px;
-    .footer-left {
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: 44px;
+      text-transform: uppercase;
+    }
+    .title::before {
+      content: "";
+      display: block;
+      height: 20px;
+      width: 30px;
+      background-image: url("../../../assets/images/dotsW.svg");
+      background-repeat: no-repeat;
+    }
+    .text {
+      margin-top: 20px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 32px;
+    }
+    .copy {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 32px;
+      color: #ffffff;
+      opacity: 0.5;
+    }
+  }
+  .footer-right {
+    display: flex;
+    .shop {
+      margin-right: 100px;
+      .shop-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .title {
-            display: flex;
-            align-items: center;
-            font-size: 44px;
-            text-transform: uppercase;
+        align-items: center;
+      }
+      align-items: center;
+      .shop-title::before {
+        content: "";
+        display: block;
+        height: 20px;
+        width: 30px;
+        background-image: url("../../../assets/images/dotsW.svg");
+        background-repeat: no-repeat;
+      }
+      .list {
+        ul {
+          li {
+            list-style-type: none;
+            a {
+              color: #faf7f3;
+              text-decoration: none;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 36px;
+            }
+          }
         }
-        .title::before {
-            content: '';
-            display: block;
-            height: 20px;
-            width: 30px;
-            margin-left: -30px;
-            background-image: url('../../../assets/images/dotsW.svg');
-            background-repeat: no-repeat;
+      }
+    }
+    .legals {
+      .shop-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .shop-title::before {
+        content: "";
+        display: block;
+        height: 20px;
+        width: 30px;
+        margin-left: -30px;
+        background-image: url("../../../assets/images/dotsW.svg");
+        background-repeat: no-repeat;
+      }
+      .list {
+        ul {
+          li {
+            list-style: none;
+            a {
+              color: #faf7f3;
+              text-decoration: none;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 36px;
+            }
+          }
         }
-        .text {
-            margin-top: 20px;
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 32px;
-        }
-        .copy {
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 32px;
-            color: #FFFFFF;
-            opacity: 0.5;
-        }
+      }
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 425px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    .footer-left {
+      .title {
+        font-size: 44px;
+      }
+      .text {
+        font-size: 18px;
+      }
+      .copy {
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
     }
     .footer-right {
-        display: flex;
-        .shop {
-            margin-right: 100px;
-            .shop-title {
-                font-size: 2rem;
-                margin-bottom: 20px;
-                display: flex;
-                align-items: center;
-            }
-            .shop-title::before {
-                content: '';
-                display: block;
-                height: 20px;
-                width: 30px;
-                margin-left: -30px;
-                background-image: url('../../../assets/images/dotsW.svg');
-                background-repeat: no-repeat;
-            }
-            .list {
-                ul {
-                    li {
-                        list-style-type: none;
-                        a {
-                            color: #FAF7F3;
-                            text-decoration: none;
-                            font-family: Poppins;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 36px;
-                        }
-                    }
-                }
-            }
+      .shop {
+        .shop-title {
+          font-size: 1.2rem;
+          margin-bottom: 20px;
         }
-        .legals {
-            .shop-title {
-                font-size: 2rem;
-                margin-bottom: 20px;
-                display: flex;
-                align-items: center;
-            }
-            .shop-title::before {
-                content: '';
-                display: block;
-                height: 20px;
-                width: 30px;
-                margin-left: -30px;
-                background-image: url('../../../assets/images/dotsW.svg');
-                background-repeat: no-repeat;
-            }
-            .list {
-                ul {
-                    li {
-                        list-style: none;
-                        a {
-                            color: #FAF7F3;
-                            text-decoration: none;
-                            font-family: Poppins;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 36px;
-                        }
-                    }
-                }
-            }
+        .list {
+          ul {
+            padding: 0;
+          }
         }
+      }
+      .legals {
+        .shop-title {
+          font-size: 1.2rem;
+        }
+      }
     }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: flex;
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          .title {
+            font-size: 44px;
+          }
+          .text {
+            font-size: 18px;
+          }
+          .copy {
+            font-size: 16px;
+          }
+        }
+        .footer-right {
+            margin-top: 12px;
+          .shop {
+            .shop-title {
+              font-size: 1.2rem;
+              margin-bottom: 20px;
+            }
+           
+          }
+          .legals {
+            .shop-title {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+    
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1440px) {
+    .footer {
+        .footer-right {
+          .shop {
+            .shop-title {
+              font-size: 2rem;
+              margin-bottom: 20px;
+            }
+           
+          }
+          .legals {
+            .shop-title {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
 }
