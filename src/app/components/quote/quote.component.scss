@@ -1,7 +1,4 @@
 // common //
-.section-outer {
-
-}
 .section-inner {
     width: 100%;
     max-width: 1200px;
@@ -13,7 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;    
     .quote-title {
         padding-top: 350px;
         padding-bottom: 350px;
@@ -28,4 +27,42 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 425px) { 
+    .quote {
+        .quote-title {
+            padding-top: 300px;
+            padding-bottom: 300px;
+            background-size: cover;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media  (min-width: 768px) { 
+   
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) { 
+    .quote {
+        .quote-title {
+             font-size: 58px;
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1440px) { 
+    .quote {
+        .quote-title {
+             font-size: 68px;
+        }
+    }
+ 
 }
