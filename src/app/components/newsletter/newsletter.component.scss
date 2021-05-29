@@ -1,67 +1,89 @@
 // common //
 .section-outer {
-    background-color:  #F9F2EF;
+  background-color: #f9f2ef;
 }
 .section-inner {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
 }
 // / common //
 .newsletter {
-    text-align: center;
-    .newsletter-subtitle {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 24px;
-        color: #967675;
+  padding-left: 15px;
+  padding-right: 15px;
+  .newsletter-subtitle {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #967675;
+  }
+  .newsletter-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 110px;
+    color: #23242c;
+  }
+  .newsletter-input {
+    display: flex;
+    justify-content: space-around;
+    input {
+      background-color: #f9f2ef;
+      height: 61px;
+      width: 70%;
+      font-size: 28px;
+      border-bottom: 1px solid #cfadac;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #cfadac;
     }
-    .newsletter-title {
-        margin-top: 20px;
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 80px;
-        line-height: 110px;
-        color: #23242C;
+    input::placeholder {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 42px;
+      color: #dccbc6;
     }
+    button {
+      cursor: pointer;
+      height: 61px;
+      width: 185px;
+      background: #ffffff;
+      border: 1px solid #cfadac;
+      box-sizing: border-box;
+      border-radius: 6px;
+      color: #967675;
+      box-shadow: 0px 10px 13px -7px #967675,
+        5px 5px 15px 5px rgba(150, 118, 117, 0);
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 425px) {
+  .newsletter {
     .newsletter-input {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 50px;
-        input {
-            background-color:  #F9F2EF;
-            height: 61px;
-            width: 70%;
-            font-size: 28px;
-            border-bottom: 1px solid #CFADAC;
-            outline: none;
-            border: none;
-            border-bottom: 1px solid #CFADAC;
-        }
-        input::placeholder {
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 28px;
-            line-height: 42px;
-            color: #DCCBC6;
-        }
-            button {
-                cursor: pointer;
-                height: 61px;
-                width: 185px;
-                background: #FFFFFF;
-                border: 1px solid #CFADAC;
-                box-sizing: border-box;
-                border-radius: 6px;
-                color: #967675;
-                box-shadow: 0px 10px 13px -7px #967675, 5px 5px 15px 5px rgba(150,118,117,0);
-            }
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 100%;
+      }
+      button {
+        margin-top: 20px;
+        width: 100%;
+      }
     }
+  }
 }
